@@ -26,6 +26,7 @@ html {
   border-radius: 10rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  position: relative;
 }
 
 .btn-gold {
@@ -57,7 +58,6 @@ html {
   z-index: -1;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  position: relative;
 }
 
 .btn:hover::after {
@@ -120,6 +120,109 @@ html {
   -webkit-transform: skewY(-10deg);
           transform: skewY(-10deg);
   letter-spacing: 3rem;
+}
+
+html {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.animal-parent {
+  width: 60rem;
+  height: 40rem;
+}
+
+.animal-gallery {
+  margin: 3rem;
+  position: relative;
+}
+
+.animal-photo {
+  position: absolute;
+  height: 20rem;
+  -webkit-box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
+  outline-offset: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.animal-photo:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-box-shadow: 0 3rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3rem 1rem rgba(0, 0, 0, 0.4);
+  outline: 1rem solid;
+  z-index: 2;
+}
+
+.animal-gallery:hover .animal-photo:not(:hover) {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0.3;
+}
+
+.animal-photo-1 {
+  top: 10rem;
+  left: 30%;
+}
+
+.animal-photo-2 {
+  top: 2rem;
+  right: 15%;
+}
+
+.animal-photo-3 {
+  top: 2.5rem;
+  left: 14%;
+}
+
+html {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.explore {
+  height: 30rem;
+  position: relative;
+}
+
+.explore-picture {
+  height: 30rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.explore-header {
+  font-size: 3rem;
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.explore:hover .explore-picture {
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
+}
+
+.explore:hover .explore-header {
+  opacity: 1;
+  top: 50%;
 }
 
 .container {

@@ -11,6 +11,7 @@
   font-size: 3rem;
   border-radius: 10rem;
   transition: all 0.3s;
+  position: relative;
 }
 .btn-gold {
   background-color: gold;
@@ -35,7 +36,6 @@
   left: 0;
   z-index: -1;
   transition: all 0.3s;
-  position: relative;
 }
 .btn:hover::after {
   transform: scaleX(1.5) scaleY(1.6);
